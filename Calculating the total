@@ -1,0 +1,4 @@
+-- Write a query that returns an aggregation 
+SELECT MixDesc, SUM(Quantity) AS Total
+FROM Shipments
+GROUP BY MixDesc
