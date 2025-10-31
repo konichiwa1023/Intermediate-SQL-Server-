@@ -1,0 +1,3 @@
+SELECT MixDesc, COUNT(*)
+FROM Shipments
+GROUP BY MixDesc
