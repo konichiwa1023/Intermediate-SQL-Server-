@@ -1,0 +1,5 @@
+SELECT a.RecordId, a.Age, a.BloodGlucoseRandom, 
+       b.MaxGlucose
+FROM Kidney a
+JOIN (SELECT Age, MAX(BloodGlucoseRandom) AS MaxGlucose FROM Kidney GROUP BY Age) b
+ON a.Age = b.Age
