@@ -1,0 +1,11 @@
+-- Declare the variable
+DECLARE @counter INT 
+
+-- Set the counter to an initial value
+SET @counter = 20
+
+-- Increment the counter by one
+SELECT @counter = @counter + 1
+
+-- Print the variable
+SELECT @counter
