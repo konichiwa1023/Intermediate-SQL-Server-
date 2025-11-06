@@ -1,0 +1,5 @@
+SELECT TerritoryName, OrderDate, 
+       -- Select the first value in each partition
+       FIRST_VALUE(OrderDate) 
+       OVER(PARTITION BY TerritoryName ORDER BY OrderDate) AS FirstOrder
+FROM Orders
